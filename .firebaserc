@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "day08-fa66f": {
+      "hosting": {
+        "MyLogin": [
+          "day08-fa66f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "day08-fa66f"
+  }
+}

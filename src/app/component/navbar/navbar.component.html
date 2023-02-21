@@ -1,0 +1,13 @@
+<div class="container">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <div class="navbar">  
+        <p id="runway"></p>
+        
+        <div class="logout">
+            <img style="border-radius: 30px;height: 75px;margin:20px;" *ngIf="authService.currentUser" [src]="authService.currentUser.photoURL"/>
+        <p style="font-size: 25px;margin-top: 45px;" *ngIf="authService.currentUser">{{authService.currentUser.displayName}}</p>
+        <button id="btn" *ngIf="authService.currentUser" (click)="authService.logout()" [routerLink]="['/']">LOG OUT</button>
+        </div>    
+        
+    </div>
+</div>

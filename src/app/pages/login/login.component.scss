@@ -1,0 +1,41 @@
+.container{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15%;
+}
+.login{
+    display: grid;
+}
+.login input{
+    margin-bottom: 30px;
+    padding: 13px 23px 13px 13px;
+   outline: none;
+   border: none;
+   border-bottom: 2px solid rgb(114, 126, 255);;
+}
+
+.border{
+    border: 5px solid rgb(114, 126, 255);
+    border-radius: 30px;
+    padding: 5rem 10rem 5rem 10rem;
+}
+
+#text{
+    text-align: center;
+    margin-top: 10px;
+    font-size:30px ;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgba(24, 90, 222, 0.872);
+    transition: 0.5s;
+}
+
+#text:hover{
+    color: aliceblue;
+    background-color: rgba(31, 81, 182, 0.872);
+    transition: 0.5s;
+}

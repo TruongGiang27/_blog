@@ -1,0 +1,14 @@
+<!-- <div *ngFor="let i of (this.article$|async)?.news" ></div> -->
+<div class="container" >
+    <div class="border" *ngIf="!authService.currentUser">
+        <!-- <mat-icon id="icon">account_box</mat-icon> -->
+        <p style="text-align: center;font-size: 40px;padding-bottom: 20px;"  >RUNWAY</p>
+        <div class="login">
+            <input style="font-size: 23px;padding-top:5rem ;" type="text" placeholder="user or email">
+            <input style="font-size: 23px;margin-bottom: 2rem;" type="password" placeholder="password">
+        </div>
+        
+        <button id="text" *ngIf="!authService.currentUser"(click)="authService.login()" [routerLink]="['/login']">Sign in with Google</button>
+        
+    </div>
+</div>
